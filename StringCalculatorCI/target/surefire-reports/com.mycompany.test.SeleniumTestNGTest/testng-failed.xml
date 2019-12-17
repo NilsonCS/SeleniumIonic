@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.mycompany.test.SeleniumTestNGTest]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.mycompany.test.SeleniumTestNGTest">
+        <methods>
+          <include name="verifyHomePage"/>
+          <include name="setBaseURL"/>
+          <include name="endSession"/>
+        </methods>
+      </class> <!-- com.mycompany.test.SeleniumTestNGTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.mycompany.test.SeleniumTestNGTest] -->

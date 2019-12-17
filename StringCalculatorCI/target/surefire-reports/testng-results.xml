@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.mycompany.test.DzoneTestCase" duration-ms="10663" started-at="2019-11-28T13:19:17Z" finished-at="2019-11-28T13:19:28Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="10663" started-at="2019-11-28T13:19:17Z" finished-at="2019-11-28T13:19:28Z">
+      <class name="com.mycompany.test.DzoneTestCase">
+        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:com.mycompany.test.DzoneTestCase@57829d67]" name="setBaseURL" is-config="true" duration-ms="8410" started-at="2019-11-28T13:19:17Z" finished-at="2019-11-28T13:19:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseURL -->
+        <test-method status="PASS" signature="verifyJoin()[pri:0, instance:com.mycompany.test.DzoneTestCase@57829d67]" name="verifyJoin" duration-ms="2132" started-at="2019-11-28T13:19:25Z" finished-at="2019-11-28T13:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJoin -->
+        <test-method status="PASS" signature="endSession()[pri:0, instance:com.mycompany.test.DzoneTestCase@57829d67]" name="endSession" is-config="true" duration-ms="108" started-at="2019-11-28T13:19:28Z" finished-at="2019-11-28T13:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSession -->
+      </class> <!-- com.mycompany.test.DzoneTestCase -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.mycompany.test.DzoneTestCase -->
+</testng-results>

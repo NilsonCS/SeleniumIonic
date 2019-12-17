@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 7, Time elapsed: 0.637 sec <<< FAILURE!
+setBaseURL(com.mycompany.test.SeleniumTestNGTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gustavos-MacBook-Pro.local', ip: '10.100.0.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at com.mycompany.test.SeleniumTestNGTest.setBaseURL(SeleniumTestNGTest.java:20)
