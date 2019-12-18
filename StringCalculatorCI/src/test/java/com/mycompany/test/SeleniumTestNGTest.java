@@ -68,7 +68,7 @@ public class SeleniumTestNGTest {
     @Test
     public void verifyHomePage(){
         String pageTitle = driver.getTitle();
-        System.out.println("Page Title:: "+pageTitle);
+        System.out.println("Page Title reconocida, prueba exitosa:: "+pageTitle);
         Assert.assertEquals(pageTitle, "Ionic App");
     }
     
@@ -76,7 +76,7 @@ public class SeleniumTestNGTest {
     public void LoginParametrosok(){
         
         WebElement searchInput = driver.findElement(By.name("ion-input-0"));
-        searchInput.sendKeys("registrorestaurante@gmail.com");
+        searchInput.sendKeys("registroresgmailcom");
 
         WebElement searchInput2 = driver.findElement(By.name("ion-input-1"));
         searchInput2.sendKeys("12345678");
@@ -134,23 +134,90 @@ public class SeleniumTestNGTest {
     }
 
     @Test
+    public void LoginParametrosok2(){
+
+
+
+        WebElement searchInput = driver.findElement(By.name("ion-input-0"));
+        searchInput.clear();
+        searchInput.sendKeys("registrores@gmailcom");
+
+
+        WebElement searchInput2 = driver.findElement(By.name("ion-input-1"));
+        searchInput2.sendKeys("12345678");
+
+        WebElement searchButton = driver.findElement(By.name("sub"));
+
+        searchButton.submit();
+
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(SeleniumTestNGTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        // Encontrar el elemento el ion buttom
+        searchInput = driver.findElement(By.id("hola"));
+
+
+
+//Store the alert text in a variable
+
+
+//Press the OK button
+
+        searchInput2 = driver.findElement(By.id("hola"));
+
+
+
+        // sacar el valor del ion buttom identificado
+        String value = searchInput.getText();
+        System.out.println(value);
+        //String value = "Paso de pagina";
+        System.out.println(" Prueba exitosa Boton del cambio de pagina identificado retornando un valor:: "+value);
+
+        Assert.assertEquals(value, "VER DETALLES");
+
+
+        Assert.assertNotNull(value);
+//        public static void assertNull(Object var0) {
+//            assertNull(var0, (String)null);
+//        }
+//
+//        public static void assertNull(Object var0, String var1) {
+//            if (var0 != null) {
+//                failNotSame(var0, (Object)null, var1);
+//            }
+//
+//        }
+
+        if(driver.findElement(By.id("hola")).isDisplayed()){System.out.println("Sirve");}else{
+            System.out.println("No sirve");}
+
+
+
+    }
+
+
+    @Test
         public void VerDetalles(){
 
 
        // String value = driver.getPageSource();
        // System.out.println(value);
 
-        WebElement verdetalleBtn = driver.findElement(By.name("sub"));
+        WebElement verdetalleBtn = driver.findElement(By.id("hola"));
 
-               driver.findElement(By.name("hola")).click();
-
+        verdetalleBtn.click();
+             //  driver.findElement(By.name("hola")).click();
+        //verdetalleBtn.submit();
 
         String value = verdetalleBtn.getText();
         System.out.println(value);
         //String value = "Paso de pagina";
         System.out.println(" Prueba exitosa Boton del cambio de pagina identificado retornando un valor:: "+value);
 
-      //  Assert.assertEquals(value, "VER DETALLES");
+        Assert.assertEquals(value, "VER DETALLES");
 
 
 
